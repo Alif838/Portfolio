@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title> My Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<!-- LOADING SCREEN -->
+<div id="loader" class="loader">
+  <div class="loader-inner">
+    <div class="spinner"><span></span></div>
+    <p class="loader-text">LOADING PORTFOLIO…</p>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="navbar">
+  <nav class="nav-inner">
+    <a href="#home" class="logo"><span class="logo-1">Port</span><span class="logo-2">folio</span><span class="logo-2">.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#certificates" class="nav-link">Certificates</a></li>
+      <li><a href="#resume" class="nav-link">Resume</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">
+        <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      </button>
+      <button id="menuToggle" class="icon-btn mobile-only" aria-label="Toggle menu">
+        <svg class="icon icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main>
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner reveal">
+    <div class="hero-text">
+      <p class="badge"><span class="dot"></span>AVAILABLE FOR PROJECTS</p>
+      <h1>Hi, I'm <span class="gradient-text">Amanot</span></h1>
+      <p class="typing"><span id="typed"></span><span class="cursor"></span></p>
+      <p class="hero-desc">Passionate Computer Science student interested in Web Development, Programming, IoT, and Software Engineering.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-accent">View Projects →</a>
+        <a href="#contact" class="btn btn-ghost">Contact Me ✉</a>
+      </div>
+      <div class="counters">
+        <div class="counter"><div class="counter-num" data-target="3">0+</div><div class="counter-label">Projects</div></div>
+        <div class="counter"><div class="counter-num" data-target="10">0+</div><div class="counter-label">Skills</div></div>
+        <div class="counter"><div class="counter-num" data-target="4">0+</div><div class="counter-label">Certificates</div></div>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="image-wrap">
+        <div class="image-glow"></div>
+        <div class="image-circle"><img src="amanot.jpg" alt="Amanot — CSE Student" /></div>
+        <div class="location-tag">📍 Bangladesh</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="section-head reveal"><p class="eyebrow">About</p><h2>About Me</h2><div class="under"></div></div>
+    <div class="about-grid">
+      <div class="reveal about-text">
+        <p>I'm a Computer Science and Engineering student from <strong>Bangladesh</strong>, deeply curious about how software and hardware come together to solve real problems. I love writing clean code, building responsive web experiences, and tinkering with microcontrollers.</p>
+        <p>My focus is on becoming a well-rounded developer — combining strong programming fundamentals with practical experience in modern web stacks and embedded systems.</p>
+      </div>
+      <div class="reveal about-tags">
+        <div class="tag-card"><span class="tag-icon">🌐</span><span>Web Development</span></div>
+        <div class="tag-card"><span class="tag-icon">💻</span><span>Programming</span></div>
+        <div class="tag-card"><span class="tag-icon">🔌</span><span>Arduino & ESP32</span></div>
+        <div class="tag-card"><span class="tag-icon">🔧</span><span>Software Engineering</span></div>
+        <div class="tag-card"><span class="tag-icon">🏆</span><span>Problem Solving</span></div>
+        <div class="tag-card"><span class="tag-icon">🎓</span><span>Learning Daily</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section muted">
+  <div class="container">
+    <div class="section-head reveal"><p class="eyebrow">Expertise</p><h2>Skills & Tools</h2><div class="under"></div></div>
+    <div class="skills-grid" id="skillsGrid"></div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <div class="container">
+    <div class="section-head reveal"><p class="eyebrow">Work</p><h2>Featured Projects</h2><div class="under"></div></div>
+    <div class="projects-grid" id="projectsGrid"></div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section muted">
+  <div class="container">
+    <div class="section-head reveal"><p class="eyebrow">Journey</p><h2>Education</h2><div class="under"></div></div>
+    <div class="timeline" id="timeline"></div>
+  </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates" class="section">
+  <div class="container">
+    <div class="section-head reveal"><p class="eyebrow">Achievements</p><h2>Certificates</h2><div class="under"></div></div>
+    <div class="certs-grid" id="certsGrid"></div>
+  </div>
+</section>
+
+<!-- RESUME -->
+<section id="resume" class="section muted">
+  <div class="container">
+    <div class="section-head reveal"><p class="eyebrow">Document</p><h2>My Resume</h2><div class="under"></div></div>
+    <div class="resume-card reveal">
+      <div class="resume-info">
+        <span class="resume-icon">📄</span>
+        <div><h3>Amanot — Resume.pdf</h3><p>A concise overview of my education, skills, and projects.</p></div>
+      </div>
+      <a href="#" download class="btn btn-primary">⬇ Download</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="container">
+    <div class="section-head reveal"><p class="eyebrow">Say Hello</p><h2>Get In Touch</h2><div class="under"></div></div>
+    <div class="contact-grid">
+      <div class="reveal contact-info">
+        <p>Have a project in mind, a question, or just want to say hi? My inbox is always open.</p>
+        <div class="contact-item"><span class="ci-icon">✉</span><div><p class="ci-label">Email</p><p class="ci-value">amanot@example.com</p></div></div>
+        <div class="contact-item"><span class="ci-icon">📞</span><div><p class="ci-label">Phone</p><p class="ci-value">+880 1XXX-XXXXXX</p></div></div>
+        <div class="contact-item"><span class="ci-icon">📍</span><div><p class="ci-label">Location</p><p class="ci-value">Bangladesh</p></div></div>
+        <div class="socials">
+          <a href="#" aria-label="GitHub" class="social">GH</a>
+          <a href="#" aria-label="LinkedIn" class="social">in</a>
+          <a href="#" aria-label="Twitter" class="social">𝕏</a>
+        </div>
+      </div>
+      <form class="reveal contact-form" id="contactForm">
+        <div class="form-row">
+          <div class="field"><label>Name</label><input name="name" maxlength="100" required /></div>
+          <div class="field"><label>Email</label><input name="email" type="email" maxlength="255" required /></div>
+        </div>
+        <div class="field"><label>Subject</label><input name="subject" maxlength="150" required /></div>
+        <div class="field"><label>Message</label><textarea name="message" rows="5" maxlength="1000" required></textarea></div>
+        <button type="submit" class="btn btn-primary btn-full" id="submitBtn">➤ Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> Amanot. Built with passion in Bangladesh.</p>
+    <div class="socials">
+      <a href="#" class="social">GH</a><a href="#" class="social">in</a><a href="#" class="social">𝕏</a><a href="#" class="social">✉</a>
+    </div>
+  </div>
+</footer>
+
+<button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
